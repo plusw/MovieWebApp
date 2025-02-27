@@ -14,6 +14,7 @@ npm run dev
 If you have any error, please check the node version, this project use node 16, you can change your node version by this
 ```
 nvm use 16
+npm i
 ```
 ## Issues
 Welcome to raise issues.
