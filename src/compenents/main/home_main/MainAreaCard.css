@@ -1,0 +1,34 @@
+.main_area {
+  margin-top: 3rem;
+}
+.main .OneRowCards {
+  /* border: 2px solid #0f0f0f; */
+  background: #0f0f0f;
+  .movie_title {
+    color: unset;
+    display: block;
+    font-size: 1.5em;
+
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .cardList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .onecard {
+    width: 90%;
+    /* display: flex; */
+    /* height: auto; */
+  }
+  .card {
+    border-radius: 30px;
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 160%;
+    margin-bottom: 1rem;
+  }
+}

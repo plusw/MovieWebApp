@@ -1,0 +1,106 @@
+$header-height: 8rem;
+$header-shrink-height: 5rem;
+$body-bg: #0f0f0f;
+$main-color: #ff0000;
+$txt-color: #fff;
+$white: #fff;
+$black: #000;
+.logo {
+  font-size: 2.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-right: 10px;
+    width: 50px;
+  }
+}
+
+.header {
+  // margin-top: 1rem;
+  // border:solid 2px black;
+  height: $header-height;
+  // height: 10rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  transition: height 0.3s ease, background-color 0.3s ease;
+  &.shrink {
+    height: $header-shrink-height;
+    background-color: $body-bg;
+  }
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+  }
+  &__nav {
+    & > * ~ * {
+      margin-left: 2rem;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    li {
+      padding: 5px 0;
+      font-weight: 700;
+      position: relative;
+      font-size: 1.5rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        transition: width 0.5s ease;
+        height: 2px;
+        background-color: red;
+      }
+
+      &.active::after,
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+.container {
+  max-width: 1600px;
+  margin: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+.nav-link:hover {
+  color: red;
+  /* 悬停时变成红色 */
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+a {
+  text-decoration: none;
+  color: unset;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+  background-color: #0f0f0f;
+}
+@media (hover: hover) {
+  a:hover {
+    color: red;
+  }
+}

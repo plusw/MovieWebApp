@@ -1,0 +1,21 @@
+.button_small {
+  border-width: 2px;
+  padding: 0.25rem 1.5rem;
+  font-size: 1rem;
+  border: 3px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  box-shadow: unset;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 30px;
+  font-weight: 600;
+  position: relative;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  outline: 0;
+}
+.button_small:hover {
+  box-shadow: unset;
+  color: #ff0000;
+  background-color: white;
+}

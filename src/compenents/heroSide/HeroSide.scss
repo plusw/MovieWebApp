@@ -1,0 +1,147 @@
+.heroAll {
+  // background-image: url("https://image.tmdb.org/t/p/original//v9Du2HC3hlknAvGlWhquRbeifwW.jpg");
+  padding: 9rem 0;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to top, #0f0f0f, rgba(#000, 0));
+    // background-image: linear-gradient(to top, #a82222, rgba(#4f2ceb, 0));
+  }
+}
+// .hero-slide {
+//     margin-bottom: 3rem;
+// }
+.title {
+  // border: solid 2px white;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-right: 4.5rem;
+}
+.all {
+  // border: solid 2px white;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+  img {
+    width: 400px;
+    border-radius: 30px;
+    transform: scale(0);
+    transition: transform 1s ease;
+  }
+
+  .overView {
+    // border: solid 2px white;
+    margin-top: 3rem;
+    font-weight: 700;
+    margin-right: 4.5rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1.8rem;
+    border-radius: 30px;
+    background-color: #ff0000;
+    border: 4px solid transparent;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0px 0px 7px 8px #ff00004d;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+  }
+  .btn:hover {
+    box-shadow: 0px 0px 7px 15px #ff00004d;
+  }
+  .outline_btn {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem 1.8rem;
+    border-radius: 30px;
+    // background-color: #ff0000;
+    border: 4px solid transparent;
+    cursor: pointer;
+    // color: white;
+    // box-shadow: 0px 0px 7px 8px #ff00004d;
+    text-align: center;
+    // transition: box-shadow 0.3s ease;
+    position: relative;
+
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    box-shadow: unset;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  .outline_btn:hover {
+    box-shadow: unset;
+    color: #ff0000;
+    background-color: white;
+  }
+  .btns {
+    & > * ~ * {
+      margin-left: 1rem;
+    }
+    margin-top: 3rem;
+  }
+  .btns,
+  .title,
+  .overView {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  .text_area {
+    margin-left: 2rem;
+    // border: solid 2px white;
+    width: 55%;
+  }
+}
+.all.active {
+  .btns,
+  .title,
+  .overView {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .title {
+    transition-delay: 0.3s, 0.3s;
+  }
+
+  .overView {
+    transition-delay: 0.6s, 0.6s;
+  }
+
+  .btns {
+    transition-delay: 0.9s, 0.9s;
+  }
+  img {
+    transform: scale(1);
+  }
+}
+
+html {
+  font-size: 100%;
+}

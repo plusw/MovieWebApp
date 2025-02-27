@@ -1,0 +1,14 @@
+.video {
+  margin: auto;
+  margin-bottom: 5rem;
+  width: 50%;
+  iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+  }
+  .videoTitle {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
