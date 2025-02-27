@@ -6,8 +6,8 @@ https://reactmoviewebapp.vercel.app/
 ![image](https://github.com/user-attachments/assets/34377431-83dc-4954-b29a-e390a7d1d35d)
 ## How to Run Locally
 ```bash
-git clone https://github.com/plusw/RotatePdf.git
-cd RotatePdf/
+git clone https://github.com/plusw/MovieWebApp.git
+cd 
 npm install
 npm run dev
 ```
