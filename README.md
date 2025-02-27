@@ -7,7 +7,7 @@ https://reactmoviewebapp.vercel.app/
 ## How to Run Locally
 ```bash
 git clone https://github.com/plusw/MovieWebApp.git
-cd 
+cd ./MovieWebApp
 npm install
 npm run dev
 ```
